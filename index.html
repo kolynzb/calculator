@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" conte nt="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="">
+        <input id="calc_input" type="text" placeholder="0" />
+        <div class="all_btns">
+          <div class="num_btns">
+            <input
+              type="button"
+              class="num_btn"
+              value="1"
+              class="num_btn"
+              onclick="display('1') "
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="2"
+              class="num_btn"
+              onclick="display('2')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="3"
+              class="num_btn"
+              onclick="display('3')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="4"
+              class="num_btn"
+              onclick="display('4')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="5"
+              class="num_btn"
+              onclick="display('5')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="6"
+              class="num_btn"
+              onclick="display('6')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="7"
+              class="num_btn"
+              onclick="display('7')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="8"
+              class="num_btn"
+              onclick="display('8')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="9"
+              class="num_btn"
+              onclick="display('9')"
+            />
+            <input
+              type="button"
+              class="num_btn"
+              value="0"
+              class="num__btn"
+              onclick="display('0')"
+            />
+            <input
+              type="button"
+              value="C"
+              class="arith_btn"
+              onclick="calcClear()"
+            />
+            <input
+              type="button"
+              value="Del"
+              class="arith_btn"
+              onclick="del()"
+            />
+          </div>
+          <div class="arith_btns">
+            <input
+              type="button"
+              value="+"
+              class="arith_btn"
+              onclick="display('+')"
+            />
+            <input
+              type="button"
+              value="-"
+              class="arith_btn"
+              onclick="display('-')"
+            />
+            <input
+              type="button"
+              value="x"
+              class="arith_btn"
+              onclick="display('*')"
+            />
+            <input
+              type="button"
+              value="/"
+              class="arith_btn"
+              onclick="display('/')"
+            />
+          </div>
+        </div>
+        <input
+          type="button"
+          value="="
+          class="equals"
+          class="arith_btn"
+          onclick="calculate()"
+        />
+      </form>
+    </div>
+  </body>
+</html>
